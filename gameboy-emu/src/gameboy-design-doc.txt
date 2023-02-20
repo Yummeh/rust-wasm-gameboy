@@ -1,0 +1,32 @@
+Gameboy
+
+Intro
+    This emulator will be written in the programming language rust.
+    The code will be compiled to WASM so it can be ran in the browser.
+
+Some good sources:
+    https://gbdev.io/pandocs/Specifications.html
+    https://en.wikipedia.org/wiki/Game_Boy_Color
+    Testing: https://gbdev.gg8.se/files/roms/blargg-gb-tests/
+
+Memory:
+    Internal
+    8 KB, 8192 bytes of memory
+    8 KB, 8192 bytes of virtual memory
+
+    On-CPU-Die 256-byte bootstrap ROM; 32 KB, 64 KB, 128 KB, 256 KB, 512 KB, 1 MB, 2 MB, 4 MB and 8 MB cartridges
+    
+    External
+    Up to 16 times 8 KB (total 128 KB) of switchable working RAM pages (I think for saves)
+    32 KB Game Pak ROM (Read Only Memory) of which 16 KB is switchable
+
+
+CPU
+    4.19 MHz clock speed
+
+
+
+Display
+    160x144 (2.6” screen)
+    WebGL
+

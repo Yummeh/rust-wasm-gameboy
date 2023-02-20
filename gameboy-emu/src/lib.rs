@@ -1,4 +1,6 @@
 mod utils;
+pub mod gameboy;
+pub mod internals;
 
 use wasm_bindgen::prelude::*;
 

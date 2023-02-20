@@ -3,9 +3,7 @@
 	"version": "0.0.1",
 	"private": true,
 	"scripts": {
-		"dev": "concurrently \"rsw watch\"",
-		"dev2": "concurrently \"rsw watch\" \"vite dev\"",
-
+		"dev": "concurrently \"rsw watch\" \"vite dev\"",
 		"build": "rsw build && vite build",
 		"preview": "vite preview",
 		"test": "playwright test",
@@ -17,6 +15,7 @@
 		"rsw": "rsw"
 	},
 	"devDependencies": {
+		"@fontsource/fira-mono": "^4.5.10",
 		"@playwright/test": "^1.28.1",
 		"@sveltejs/adapter-auto": "^1.0.0",
 		"@sveltejs/kit": "^1.0.0",
@@ -36,6 +35,8 @@
 	},
 	"type": "module",
 	"dependencies": {
-		"vite-plugin-rsw": "^2.0.11"
+		"vite-plugin-rsw": "^2.0.11",
+		"vite-plugin-top-level-await": "^1.2.3",
+		"vite-plugin-wasm": "^3.1.1"
 	}
 }
