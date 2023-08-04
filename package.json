@@ -5,7 +5,7 @@
 	"scripts": {
 		"dev": "concurrently \"rsw watch\" \"vite dev\"",
 		"build:web": "vite build",
-		"build:rust": "cd ./gameboy-emu && cargo build",
+		"build:rust": "cd ./gameboy-emu && wasm-pack build",
 		"watch:web": "vite",
 		"watch:rust": "cd ./gameboy-emu && rsw watch",
 		"preview": "vite preview",
@@ -26,10 +26,9 @@
 		"@typescript-eslint/parser": "^5.45.0",
 		"eslint": "^8.28.0",
 		"eslint-config-prettier": "^8.5.0",
-		"eslint-plugin-svelte3": "^4.0.0",
-		"prettier": "^2.8.0",
-		"prettier-plugin-svelte": "^2.8.1",
-		"svelte": "^4.0.5",
+		"prettier": "^3.0.1",
+		"prettier-plugin-svelte": "^3.0.3",
+		"svelte": "^4.1.2",
 		"svelte-check": "^3.4.3",
 		"tslib": "^2.4.1",
 		"typescript": "^5.0.0",
@@ -39,8 +38,9 @@
 	"type": "module",
 	"dependencies": {
 		"concurrently": "^8.2.0",
+		"eslint-plugin-svelte": "^2.32.4",
 		"vite-plugin-rsw": "^2.0.11",
 		"vite-plugin-top-level-await": "^1.2.3",
-		"vite-plugin-wasm": "^3.1.1"
+		"vite-plugin-wasm": "^3.2.2"
 	}
 }

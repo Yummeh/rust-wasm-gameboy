@@ -36,3 +36,25 @@ npm run build
 You can preview the production build with `npm run preview`.
 
 > To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+REQUIREMENTS:
+
+install wasm-pack through cargo
+"wasm-pack build" command builds the pkg folder that can then be imported into svelte.
+This command also optimizes code but can give ownership issues, use command "takeown /f D:\Development\Personal\RustWasm\rust-wasm-gameboy" location of the folder depends on the user.
