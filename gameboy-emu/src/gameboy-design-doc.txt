@@ -22,11 +22,36 @@ Memory:
 
 
 CPU
-    4.19 MHz clock speed
-
+    4.19 MHz clock speed or double for gameboy color
 
 
 Display
     160x144 (2.6” screen)
     WebGL
 
+Audio
+    Do more research
+    WebGL
+
+
+Input
+    Do more research
+    WebGL
+
+
+
+Architecture
+    Display, audio, input, gameloop are dependent on implementation
+    
+    To emulate the CPU on browser it needs to use the requestAnimationFrame function to simulate the CPU clock without blocking
+    the UI thread.
+    
+
+
+TODO steps:
+
+Build loop / browser CPU
+Build rendering
+Implement logic in the CPU
+Implement Input
+Implement Audio
